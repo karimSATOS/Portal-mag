@@ -1,0 +1,256 @@
+@@ RestartEnigma @@
+systemctl restart enigma2     # DreamOS
+killall -9 enigma2            # Opensource
+
+@@ LogEnigma2 @@
+init 5; enigma2.sh >/tmp/enigma2_logfile.log 2>&1
+
+@@ Logenigma2_dreamos @@
+journalctl -f -u enigma2>/usr/enigma_log
+
+@@ DebugEnigma @@
+init 4; sleep 5; enigma2 >/tmp/enigma2_logfile.log 2>&1
+
+@@ Init Codes @@
+init 0          # Deep Standby 
+init 1          # Stops Enigma2 and network
+init 2          # Stops Enigma2
+init 3          # Starts Enigma2 normally
+init 4          # Stops Enigma2
+init 5          # Stops Enigma2
+init 6          # Reboots the box
+
+@@ Directory @@
+pwd                  # Current Dir
+cd                   # Home
+cd ..                # Up
+cd /                 # Root
+cd /home             # Home
+cd /home/root        # User Dir
+cd /tmp              # /tmp
+
+@@ File List @@
+ls
+ls --full-time
+ls -1
+ls -als
+ls -ls
+
+@@ Search @@
+find / -iname FILE_NAME
+find / -size +10000k
+grep -r PATTERN dir
+grep PATTERN FILES
+
+@@ Screen Grabs @@
+grab -d -p /tmp/filename.png
+
+@@ System @@
+echo root:XXXX | chpasswd  # Change Password
+date
+hostname
+hostname -i
+uname -a
+uptime
+whoami
+shutdown -r now    # Full reboot.
+shutdown -h now    # Full shutdown.
+cat /proc/meminfo  # memory info
+
+@@ User @@
+id
+last
+who
+
+@@ Network @@
+ifconfig
+netstat
+ping google.com -c 3        # 3 seconds
+
+@@ Change MAC @@
+ifconfig eth0 down
+ifconfig eth0 hw ether xx:xx:xx:xx:xx:xx
+ifconfig eth0 up
+ifconfig eth0 |grep HWaddr
+
+@@ File Permission @@
+chmod 755 /tmp/FILE_NAME
+chmod 766 /tmp/FILE_NAME
+chmod 777 /tmp/FILE_NAME
+
+@@ Disk usage @@
+df -h
+df -i
+df -a
+
+@@ Sound @@
+alsamixer
+
+@@ Opensource @@
+opkg update
+opkg update; opkg upgrade
+opkg install --force-overwrite /tmp/*.ipk
+opkg remove --force-depends FILE_NAME
+opkg remove --force-depends enigma2-plugin-softcams-ncam
+opkg remove --force-depends enigma2-plugin-softcams-oscam*
+
+@@ DreamOS @@
+apt-get update
+apt-get update; apt-get upgrade
+apt-get install -f -y
+dpkg -i --force-overwrite /tmp/*.deb
+apt-get purge --auto-remove FILE_NAME
+apt-get purge --auto-remove enigma2-plugin-softcams-ncam
+apt-get purge --auto-remove enigma2-plugin-softcams-oscam*
+
+@@@@--- Command ---@@@@
+opkg install python-requests
+opkg install python-sqlite3
+opkg install wget
+opkg install curl
+opkg install astra-sm
+opkg install ffmpeg
+cd /tmp && rm -f ffinstall.py && wget http://zadmario.gitlab.io/ffinstall.py && python ffinstall.py
+cd /tmp && rm -f ffinstall.py && wget http://e2iplayer.pkteam.pl/ffinstall.py && python ffinstall.py
+opkg install gstplayer
+opkg install exteplayer3
+opkg install python-pycrypto
+opkg install livestreamer
+opkg install livestreamersrv
+opkg install libusb-1.0-0
+opkg install libssl1.0.2
+opkg install libcurl4
+opkg install libpcsclite1
+opkg install libcrypto1.0.2
+opkg install enigma2-plugin-systemplugins-serviceapp
+opkg install --force-reinstall enigma2-plugin-systemplugins-serviceapp
+opkg install gstreamer1.0-plugins-good
+opkg install gstreamer1.0-plugins-base
+opkg install gstreamer1.0-plugins-bad
+opkg install gstreamer1.0-plugins-ugly
+opkg install gstreamer1.0-plugins-bad-meta
+opkg install gstplayer ffmpeg libgstplayer-1.0-0
+opkg install enigma2-plugin-systemplugins-softcamstartup                  # TeamBlue
+opkg install enigma2-plugin-skins-metrix-atv-fhd-icons                    # Openatv
+
+@@ SoftCam secret feed @@
+wget http://updates.mynonpublic.com/oea/feed -qO - | /bin/sh
+
+@@ Kodi : Opensource @@
+opkg install enigma2-plugin-extensions-kodi kodi-addon-pvr-vuplus
+opkg remove --force-depends kodi kodi-addon-pvr-vuplus
+
+@@ Kodi : DreamOS @@
+apt-get install enigma2-plugin-extensions-kodi kodi-addon-pvr-vuplus 
+apt-get purge --auto-remove  kodi kodi-addon-pvr-vuplus
+
+@@ Driver Wifi Novaler @@
+opkg list-installed | grep mt7601u
+opkg install enigma2-plugin-drivers-network-usb-mt7601u
+opkg remove --force-depends enigma2-plugin-drivers-network-usb-mt7601u
+
+@@@@--- Plugins ---@@@@
+
+@@ SubsSupport @@
+wget https://raw.githubusercontent.com/biko-73/SubsSupport/main/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/SubsSupport/
+
+@@ IPtoSAT @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/IPtoSAT/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/IPtoSAT
+
+@@ Ansite @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Ansite/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/Ansite
+
+@@ SupTv @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Suptv/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/suptv
+
+@@ Multi-Stalker @@
+wget https://raw.githubusercontent.com/ziko-ZR1/Multi-Stalker-install/main/Downloads/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/MultiStalker
+
+@@ AJPanel @@
+wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AJPan/
+
+@@ DreamSatPanel @@
+wget http://ipkinstall.ath.cx/ipk-install/DreamSatPanel/installer.sh  -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/DreamSat
+
+@@ TSmedia home TV @@
+wget http://tunisia-dreambox.info/TSmedia/software_official/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/TSmedia
+
+@@ FootOnsat @@
+wget https://raw.githubusercontent.com/ziko-ZR1/FootOnsat/main/Download/install.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FootOnSat
+
+@@ IP Audio @@
+wget http://linuxsat5.webhop.info/ipaudio/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/IPAudio
+
+@@ TSIPlayer @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/IPTVPlayer/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer
+
+@@ Arabic Savior @@
+wget http://tunisia-dreambox.info/TSplugins/ArabicSavior/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/ArabicSavior
+
+@@ Raed Quick Signal @@
+wget http://tunisia-dreambox.info/TSplugins/RaedQuickSignal/installer.sh  -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/RaedQuickSignal
+
+@@ EPG Grabber @@
+wget https://raw.githubusercontent.com/ziko-ZR1/Epg-plugin/master/Download/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/EPGGrabber
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/EPGGrabber/api/epg_status.json
+
+@@ Key Adder @@
+wget http://tunisia-dreambox.info/TSplugins/AddKey/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/KeyAdder
+
+@@ JediMakerXtream @@
+wget https://raw.githubusercontent.com/biko-73/JediMakerXtream/main/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/JediMakerXtream
+
+@@ X-Streamity @@
+wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/XStreamity
+
+@@ New Virtual KeyBoard @@
+wget http://tunisia-dreambox.info/TSplugins/NewVirtualKeyBoard/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/NewVirtualKeyBoard
+rm -rf /usr/lib/enigma2/python/Screens/NewVirtualKeyBoard.py*
+
+@@ OpenMultiboot @@
+wget https://raw.githubusercontent.com/biko-73/openmultiboot/main/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/OpenMultiboot
+
+@@ NEOBOOT @@
+wget https://raw.githubusercontent.com/gutosie/neoboot/master/iNB.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/NeoBoot
+
+@@ TorrentPlayer @@
+wget http://tunisia-dreambox.info/TSplugins/torrentPlayer/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer
+
+@@ Softcam @@
+wget -qO /etc/tuxbox/config/SoftCam.Key "https://raw.githubusercontent.com/MOHAMED19OS/SoftCam_Emu/main/Enigma2/SoftCam.Key"
+rm -rf /etc/tuxbox/config/SoftCam.Key
+
+@@ Satellites @@
+wget -qO /etc/tuxbox/satellites.xml https://raw.githubusercontent.com/OpenPLi/tuxbox-xml/master/xml/satellites.xml
+rm -rf /etc/tuxbox/satellites.xml
+
+@@ Oscam & Ncam @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Oscam_Ncam/installer.sh -q; sh installer.sh
+
+@@ just watch @@
+wget http://justwatch.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh    # DreamOS
+
+@@ BackupFlash @@
+wget http://tunisia-dreambox.info/TSplugins/backupflash/installer.sh -qO - | /bin/sh    # DreamOS
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/backupflashe2
