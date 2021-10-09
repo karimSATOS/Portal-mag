@@ -6,351 +6,557 @@
 
  MultiStalker plugin 
  
- 8/10/2021 
-
-
-
-
-
-http://killott.com/c/
-00: 1A: 79: 00: CF: 50 Ιανουαρίου 27 2022
-00: 1A: 79: 3B: 3F: 07 25 Δεκεμβρίου 2021
-
-http://7090.eu:88/c/
-00: 1a: 79: 6a: 01: 4a 18 Ιουλίου 2022
-00: 1a: 79: 0e: 9f: 68 Ιανουαρίου 10 2022
-00: 1a: 79: 33: 63: 4e 13 Φεβρουαρίου 202200
-00: 1a: 79: d6: 34: 8f 17 Οκτωβρίου 2022
-00: 1a: 79: 28: 2f: 63 Φεβρουαρίου 10 2022
-00: 1a: 79: c0: 0f: 36 Απριλίου 9 2022
-00: 1a: 79: c8: 3f: 5b 15 Μαΐου 2022
-00: 1α: 79: 40: 5ε: 81 Φεβρουαρίου 21 2022
-00: 1α: 79: 37: 59: 9β 30 Ιουνίου 2022
-00: 1α: 79: 90: 01: 7α 27 Ιανουαρίου 2022
-
-http://62.182.81.111:8000/ c/
-00: 1A: 79: 14: 4F: 0F 17 Ιουλίου 2022
-00: 1A: 79: 14: 4F: D9 17 Ιουλίου 2022
-00: 1A: 79: 14: 5F: E2 17 Ιουλίου 2022
-
-http: // punto- z.com:25461/c/
-00: 1Α: 79: 50: 67: 50 28 Νοεμβρίου 2021, 1:37 μμ
-00: 1Α: 79: 50: 92: FF 8 Νοεμβρίου 2021, 3:00 π.μ.
-00: 1Α: 79: 50: ΑΒ: 38 4 Δεκεμβρίου 2021, 3:49 μ.μ.
-
-http://w.bs-share.com:8000/c/
-00: 1Α: 79: 00: 00: 01 28 Φεβρουαρίου 2022, 2:55 μ.μ.
-00: 1Α: 79: 00: 00: 00 18 Δεκεμβρίου 2021, 9:40 μμ
-00: 1A: 79: B6: DD: 46 22 Ιανουαρίου 2022, 12:09 μμ
-00: 1A: 79: B6: DD: 4E 19 Δεκεμβρίου, 2021, 7:23 μμ
-00: 1Α: 79: B6: DF: FD 28 Νοεμβρίου 2021, 10:23 μμ
-00: 1α: 79: 30: 68: e6 10 Νοεμβρίου 2021, 1:00 π.μ.
-00: 1Α: 79: 3D: 56: 06 11 Φεβρουαρίου 2022, 7:04 μμ
-00: 1A: 79: 44: 72: F4 5 Ιανουαρίου 2022, 8:45 μμ
-00: 1a: 79: 60: 0f: b7 6 Φεβρουαρίου, 2022, 11:37 μμ
-00: 1A: 79: A2: BD: 7A 1 Απριλίου 2022, 4:48 π.μ.
-
-http://iptv-pla.net:7040/c/
-00: 1A: 79: 50: 20: A6 18 Αυγούστου 2022, 9:39 μ.μ
-00: 1A: 79: 50: 35: 1C 12 Μαρτίου 2022, 8:27 μμ
-00: 1Α: 79: 50: 4D: 7Α 18 Ιανουαρίου 2022, 1:22 π.μ.
-00: 1Α: 79: 50: 4Ε: 52 14 Νοεμβρίου 2021, 7:17 μμ
-00: 1Α: 79: 50: 64: 42 Απεριόριστη
-00: 1Α: 79: 50: 68: 3D 20 Απριλίου 2022, 12:00 π.μ.
-00: 1Α: 79: 50: 68: 6C 15 Νοεμβρίου 2021, 6:33 μ.μ.
-
-http://143.244.35.166:8080/c/
-00: 1Α: 79: 4C: 77: 63 23 Ιανουαρίου 2022, 11:11 μ.μ.
-
-http://51.255.237.156:8000/c/
-00: 1A: 79: B5: 03: A5 30 Δεκεμβρίου 2021, 8:49 μμ
-00: 1A: 79: B5: 0B: 0F 9 Απριλίου 2022, 10:21 π.μ.
-00: 1A: 79: B5: 0E: CE 14 Νοεμβρίου 2022, 6:17 μ.μ
-00: 1A: 79: B5: 12: 06 Σεπτεμβρίου 2, 2022, 8:51 μμ
-00: 1Α: 79: Β5: 11: ΕΕ 3 Μαρτίου 2022, 10:36 μμ
-00: 1Α: 79: Β5: 11: ΕΕ 25 Αυγούστου 2022, 8:31 μ.μ.
-00: 1A: 79: B5: 13: B1 14 Ιανουαρίου 2022, 10:34 μμ
-00: 1A: 79: B5: 1D: 79 1 Δεκεμβρίου 2021, 8:02 μμ
-00: 1A: 79: B5: 23: 79 1 Δεκεμβρίου 2021, 11:56 μμ
-00: 1Α: 79: B5: 24: 65 1 Δεκεμβρίου 2021, 10:58 μμ
-00: 1Α: 79: B5: 24: A6 2 Σεπτεμβρίου 2022, 11:38 π.μ.
-00: 1A: 79: 60: 02: C1 21 Δεκεμβρίου 2021, 7:47 μμ
-00: 1A: 79: 60: 04: 5F 19 Νοεμβρίου 2021, 1:00 μ.μ
-00: 1A: 79: 60: 03: 75 16 Νοεμβρίου 2021, 5:53 μ.μ.
-00: 1Α: 79: 60: 03: CD 26 Νοεμβρίου 2021, 12:00 π.μ.
-00: 1Α: 79: 60: 03: D3 2 Νοεμβρίου 2021, 4:26 μ.μ.
-00: 1A: 79: 60: 04: E6 11 Ιανουαρίου 2022, 1:50 μμ
-00: 1A: 79: 60: 04: 6E 20 Νοεμβρίου 2021, 12:18 μμ
-00: 1Α: 79: 60: 04: AF 6 Φεβρουαρίου 2022, 3:59 μ.μ.
-
-http://143.244.35.166:8080/c/
-00: 1A: 79: 4C: 77: 63 23 Ιανουαρίου 2022
-
-http://storeiptv.net/c/
-00: 1A: 79: 54: 22: 71 15 Μαρτίου 2022
-
-http://bronze.iptv-sharing.com:8000/c/
-00: 1A: 79: B6: DD : 46 22 Ιανουαρίου 2022
-
-http://iptvworld.nl:2095/c/
-00: 1A: 79: 3D: CB: 28 Μαρτίου 16 2022
-00: 1A: 79: AD: DE: 2C 21 Απριλίου 2022
-
-http: // line .crystal-ott.com: 80/ c/
-00: 1A: 79: 63: AC: 94 27 Φεβρουαρίου 2022
-00: 1A: 79: 48: 00: 28 27 Μαρτίου 2022
-00: 1A: 79: 50: 5C : 2B 16 Μαρτίου 2022
-
-http://iptvworld.nl:2095/c/
-00: 1A: 79: 76: 42: 45 22 Οκτωβρίου 2021, 11:51 π.μ.
-00: 1A: 79: 95: 70: 30 Φεβρουαρίου 22, 2022, 7:10 μμ
-00: 1A: 79: 12: D7: 4B 19 Δεκεμβρίου 2021, 6:40 μμ
-00: 1A: 79: B6: F3: 55 12 Σεπτεμβρίου 2022, 1:44 μ.μ.
-00: 1Α: 79: 52: 6Α: DA 18 Σεπτεμβρίου 2022, 10:59 π.μ
-00: 1A: 79: B5: 0D: 7E 22 Ιουλίου 2022, 9:11 μμ
-00: 1A: 79: 90: 5B: CC 2 Ιουνίου 2022, 9:50 μμ
-00: 1A: 79: A4: C6: DC 13 Ιανουαρίου 2022, 4:12 μμ00: 1A: 79: B0: A4: 83 20 Μαρτίου 2022, 3:32 μμ
-00: 1A: 79: B7: 20: EA 27 Οκτωβρίου 2021, 2:17 μ.μ.
-00: 1A: 79: AB: A6: 77 23 Νοεμβρίου 2021, 7:33 μ.μ.
-00: 1A: 79: 4A: 6F: 95 28 Αυγούστου 2022, 2:11 μμ
-00: 1A: 79: B6: 45: F7 2 Αυγούστου 2022, 8:52 μμ
-00: 1Α: 79: 80: 3Α: 56 1 Ιανουαρίου 2022, 4:49 μμ
-00: 1Α: 79: B2: 7A: 67 5 Δεκεμβρίου 2021, 9:24 μ.μ.
-00: 1A: 79: 57: DF: 3F 26 ​​Φεβρουαρίου 2022, 2:28 μμ
-
- 
-
-00: 1A: 79: AE: C6: E7 14 Δεκεμβρίου 2021, 9:51 π.μ.
-
- 
-
-00: 1A: 79: A6: 4A: 02 Φεβρουαρίου 24, 2022, 7:42 μμ
-00: 1Α: 79: Β3: 6Ε: 3Β 2 Ιουλίου 2022, 6:24 μμ
-00: 1Α: 79: A2: 6Β: 52 22 Δεκεμβρίου 2021, 21:30 μ.μ.
-00: 1A: 79: A7: DB: B5 20 Φεβρουαρίου 2022, 4:24 μμ
-00: 1A: 79: 2B: 53: 7E 17 Ιουνίου 2022, 12:39 μμ
-00: 1A: 79: E3: 50: 5Α 7 Μαρτίου του 2022, 11:22 am
-
-http://funportal.vip:8080/c/
-00: 1A: 79: 0A: 5F: EE 5 Φεβ 2022, 22:36
-00: 1A: 79: 2E: 2Β: 94 1 Μαρτίου 2022, 8:37 μμ
-00: 1Α: 79: 34: 34: 34 8 Δεκεμβρίου 2021, 5:58 μμ
-00: 1Α: 79: 38: 72: Β1 22 Νοεμβρίου 2021, 2: 43 π.μ.
-00: 1Α: 79: 44: ΑΕ: FB 16 Ιουνίου 2022, 1:41 μ.μ.
-00: 1α: 79: 45: 96: 50 9 Μαρτίου 2022, 6:45 μ.μ.
-00: 1α: 79: 48: 89: b4 30 Σεπτεμβρίου 2022, 6:02 μμ
-00: 1A: 79: 55: F9: 62 16 Δεκεμβρίου 2021, 7:04 μμ
-00: 1A: 79: 5E: 75: 09 18 Ιουνίου 2022, 5: 37 μμ
-00: 1Α: 79: 5Ε: 9Α: 58 22 Μαΐου 2022, 2:48 μ.μ
-00: 1α: 79: 85: e2: εε 2 Σεπτεμβρίου 2022, 5:28 μ.μ.
-00: 1a: 79: e0: 6f: ba 7 Δεκεμβρίου 2021, 10:48 μ.μ
-
- http://iptveuro7.club/c
-
-00:1a:79:3c:75:56
-
-00:1a:79:17:5b:78
-
-00:1a:79:1e:1a:af
-
-00:1a:79:51:f1:b0
-
-00:1a:79:47:34:a7
-
-00:1a:79:5e:ba:a2
-
-00:1a:79:4b:b2:e2
-
-00:1a:79:5e:80:bd
-
-00:1a:79:6e:af:95
-
-00:1a:79:4a:85:71
-
-00:1a:79:6b:17:f5
-
-00:1a:79:52:50:63
-
-00:1a:79:5d:16:b2
-
-00:1a:79:24:65:1a
-
-00:1a:79:4c:fe:67
-
-http://f1.millenium-ott.com:25443/c
-
-00:1A:79:44:78:1A
-
-00:1A:79:E1:08:50
-
-00:1A:79:AD:F3:A8
-
-00:1A:79:BA:E2:CA
-
-00:1A:79:62:95:E5
-
-00:1A:79:A0:8A:3A
-
-00:1A:79:64:D9:D9
-
-00:1A:79:65:17:0D
-
-00:1A:79:6B:79:F6
-
-00:1A:79:AB:F2:71
-
-00:1A:79:5D:26:1A
-
-http://dragon4k.com:8000/c
-
-00:1a:79:6d:e2:86
-
-00:1a:79:5a:1d:6b
-
-00:1a:79:5e:22:71
-
-00:1a:79:50:c5:24
-
-00:1a:79:38:e8:39
-
-http://world.marvelhd.eu:8000/c/
-
-00:1a:79:67:7c:8d
-
-00:1a:79:5d:f3:5e
-
-00:1a:79:6a:3e:22
-
-00:1A:79:03:0F:66
-
-00:1a:79:3a:fb:0b
-
-00:1A:79:5E:82:A7
-
-00:1A:79:48:EB:CD
-
-00:1A:79:48:0A:CC
-
-http://chmedia.xyz:8080/c/
-
-00:1A:79:04:1F:E7
-
-00:1a:79:00:28:0e
-
-http://promaxhd.com:8000/c/
-
-00:1A:79:00:55:4b
-
-00:1A:79:00:54:0d
-
-00:1A:79:00:52:96
-
-00:1A:79:00:53:43
-
-00:1A:79:00:52:9c
-
-00:1A:79:00:52:49
-
-00:1A:79:00:50:1e
-
-00:1A:79:00:51:e4
-
-00:1A:79:00:4f:ec
-
-00:1A:79:00:50:9b
-
-00:1A:79:00:4f:ad
-
-00:1A:79:00:4f:c4
-
-00:1A:79:00:4d:c4
-
-StbEmu codes Stalker Portal mac 6 October 2021    
-http://ipro.tv:80/c/
-00:1a:79:26:64:3d October 28, 2021, 11:39 pm
-00:1a:79:2c:fa:ec December 4, 2021, 6:46 pm
-00:1A:79:33:F5:F9 October 30, 2021, 2:00 am
-00:1A:79:3D:21:6A December 21, 2021, 7:02 am
-00:1A:79:3D:F0:F8 November 28, 2021, 1:00
-00:1A:79:3F:B7:3F January 25, 2022, 6:56 pm
-00:1A:79:46:6F:88 July 15, 2022, 2:00 am
-00:1A:79:47:7C:97 April 4, 2022, 2:00 am
-00:1A:79:48:13:62 October 27, 2021, 2:00 am
-00:1a:79:49:3f:f4 September 15, 2022, 8:13 pm
-00:1a:79:4e:54:fd November 6, 2021, 3:12 pm
-00:1A:79:57:1F:55 September 13, 2022, 9:37 pm
-00:1A:79:57:88:20 December 4, 2021, 12:39 pm
-
-http://matrixtop.com:25461/c/
-Mac: 00:1a:79:a0:0e:47
-Mac: 00:1a:79:c6:75:b8
-Mac: 00:1a:79:a0:16:25
-Mac: 00:1a:79:c6:85:82
-
-http://c.proserver.in:8080/c/
-00:1A:79:2B:C9:53 April 19, 2022
-00:1A:79:2B:3F:39 December 24, 2021, 6:21 am
-00:1A:79:2B:A2:4E December 10, 2021, 4:15 am
-00:1A:79:2B:C9:53 April 19, 2022, 6:56 pm
-
-http://forthemasses.uk/c/
-00:1A:79:47:3d:cd;January 1, 2022,
-http://forthemasses.uk/c/
-00:1A:79:47:C9:88 December 11, 2021, 8:32 am
-00:1A:79:47:C9:79 May 1, 2022, 2:26 pm
-00:1A:79:47:CB:75 December 20, 2021, 9:04 am
-00:1A:79:47:CC:7B January 23, 2022, 5:00 pm
-00:1A:79:47:CF:CB November 29, 2021, 11:02 am
-00:1A:79:47:CF:AF December 15, 2021, 4:34 pm
-00:1A:79:47:D2:46 April 9, 2022, 6:05 pm
-00:1A:79:47:D2:B4 December 22, 2021, 7:06 am
-00:1A:79:47:D3:4A February 14, 2022, 12:59 pm
-00:1A:79:47:E6:1B November 11, 2021, 9:15 pm
-00:1A:79:47:E7:95 May 21, 2022, 1:50 pm
-00:1A:79:47:E8:71 November 20, 2021, 5:57 pm
-00:1A:79:47:E8:58 August 9, 2022, 6:03 pm
-00:1A:79:47:E9:72 June 22, 2022, 10:29 am
-00:1A:79:47:E9:50 February 26, 2022, 8:30 pm
-00:1A:79:47:E9:71 August 6, 2022, 6:17 pm
-00:1A:79:47:E9:45 June 14, 2022, 11:00 am
-
-http://dreams.celestialdream.art:8080/c/
-00:1a:79:7d:a4:65 March 17, 2022
-00:1a:79:1c:32:0c September 23, 2022
-00:1a:79:ac:cb:07 Unlimited
-
-http://365tv.info:999/c/
-00:1A:79:56:1E:56 December 27, 2021
-00:1A:79:09:66:58 March 25, 2022
-00:1A:79:41:71:FC March 4, 2022
-00:1A:79:63:66:A8 April 14, 2022
-00:1A:79:29:06:1a September 16, 2022
-00:1A:79:F5:3C:87 September 6, 2022
-00:1A:79:24:E9:23 December 5, 2021, 7:05 pm
-00:1A:79:2E:2C:F4 January 18, 2022, 1:47 pm
-00:1A:79:31:E8:2B March 4, 2022, 1:57 am
-00:1A:79:40:CD:6B November 29, 2021, 5:59 pm
-00:1A:79:40:CD:D3 January 21, 2022, 8:44 pm
-00:1A:79:40:CD:F3 October 15, 2021, 2:18 pm
-00:1A:79:56:8D:97 March 12, 2022, 7:37 pm
-00:1A:79:63:9F:64 December 24, 2021, 4:06 pm
-
-http://bggxq.funtogether.xyz:8080/c/
-00:1A:79:54:09:77 September 27, 2022
-
-http://live.darkside-iptv.com:8080/c/
-00:1A:79:50:c3:6b January 19, 2022
-
-http://caffe.link:25461/c/
-00:1A:79:29:FB:17 Unlimited
-00:1a:79:2c:9f:2c Unlimited
-00:1A:79:3A:C3:65 March 21, 2022
-00:1A:79:3D:FE:C9 February 9, 2022
-00:1A:79:3E:45:F0 March 16, 2022
-00:1A:79:3F:21:79 February 19, 2022
-00:1A:79:41:73:19 January 4, 2022
-00:1A:79:58:0E:FE February 16, 2022
-00:1A:79:58:0D:B5 February 16, 2022
-00:1A:79:58:10:37 October 15, 2021
-00:1A:79:58:15:05 January 20, 2022
-00:1A:79:58:16:C5 October 19, 2021
+ 9/10/2021 
+
+
+
+
+http://new-pro.tv:8080/c/
+
+
+
+════════════════Nightly════════════════
+mac  :00:1A:79:35:E7:33
+expire :May 19, 2022, 10:04 am
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:30:A2:1D
+expire :June 12, 2022, 4:35 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3E:12:99
+expire :June 14, 2022, 9:50 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3F:24:93
+expire :August 21, 2022, 9:01 am
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:38:64:F3
+expire :August 22, 2022, 3:55 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3A:A0:E9
+expire :March 1, 2022, 4:04 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3F:CB:C8
+expire :January 7, 2022, 10:21 am
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:31:DC:8D
+expire :November 28, 2021, 1:53 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:36:72:B0
+expire :July 5, 2022, 1:10 am
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:40:CE:AE
+expire :December 30, 2021, 6:49 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3C:53:6E
+expire :April 14, 2022, 8:25 am
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3F:85:6B
+expire :June 8, 2023, 12:00 am
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:40:D1:2E
+expire :March 8, 2022, 7:32 am
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:39:5E:8B
+expire :February 7, 2022, 9:48 am
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:42:1F:60
+expire :May 12, 2022, 6:17 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:31:BF:BA
+expire :August 23, 2022, 5:33 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:38:64:F3
+expire :August 22, 2022, 3:55 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:43:33:67
+expire :November 13, 2021, 5:31 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:44:F7:24
+expire :March 6, 2022, 2:00 pm
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:42:BD:65
+expire :August 14, 2022, 4:41 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:45:F3:98
+expire :January 24, 2022, 7:19 pm
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:47:F9:26
+expire :October 7, 2022, 2:07 pm
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:32:FD:74
+expire :April 2, 2022, 3:02 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:4C:4A:E3
+expire :November 3, 2021, 5:40 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:4C:27:99
+expire :December 11, 2021, 2:41 pm
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:50:BC:9B
+expire :June 27, 2022, 9:34 pm
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:50:73:C1
+expire :June 14, 2022, 2:42 pm
+city :<city>
+country :<country>
+stb :[MAG351]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:54:B5:8D
+expire :April 3, 2022, 6:39 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:55:48:34
+expire :October 25, 2021, 10:51 am
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:40:D0:34
+expire :February 15, 2022, 8:39 pm
+city :Lidkoeping
+country :Sweden
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:4C:24:14
+expire :December 10, 2021, 5:08 pm
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:59:2F:C2
+expire :June 16, 2022, 8:51 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:38:FF:92
+expire :May 6, 2022, 5:00 am
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:5B:2B:22
+expire :September 29, 2022, 1:32 am
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:5C:7F:9F
+expire :August 31, 2022, 3:38 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:5E:3D:2D
+expire :March 15, 2023, 7:54 am
+city :<city>
+country :<country>
+stb :[MAG324]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:32:10:9E
+expire :December 7, 2021, 1:59 pm
+city :Erbil
+country :Iraq
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:5F:53:3D
+expire :February 19, 2022, 4:51 am
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:51:53:FB
+expire :December 13, 2021, 6:09 pm
+city :<city>
+country :<country>
+stb :[MAG256]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:66:BD:C4
+expire :April 27, 2022, 7:29 pm
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:6A:53:2F
+expire :March 15, 2022, 8:11 pm
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:6D:A6:B4
+expire :March 15, 2022, 12:26 am
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:5D:53:69
+expire :June 1, 2022, 10:29 pm
+city :<city>
+country :<country>
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:18:1C:98
+expire :November 26, 2021, 4:08 pm
+city :<city>
+country :<country>
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:63:DA:F5
+expire :August 24, 2022, 11:34 am
+city :Lagos
+country :Nigeria
+stb :[MAG322]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:21:0e:a2
+expire :April 8, 2022, 2:25 pm
+city :City of London
+country :United Kingdom
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:67:5E:E1
+expire :September 5, 2022, 3:53 pm
+city :Bethnal Green
+country :United Kingdom
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:1f:1c:59
+expire :July 25, 2022, 7:27 pm
+city :<city>
+country :<country>
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:22:16:37
+expire :December 7, 2021, 1:46 pm
+city :Erbil
+country :Iraq
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:21:0c:ef
+expire :November 16, 2021, 2:48 pm
+city :Birmingham
+country :United Kingdom
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:23:99:20
+expire :May 9, 2022, 7:15 pm
+city :Berlin
+country :Germany
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:1E:40:73
+expire :July 21, 2022, 3:19 pm
+city :Frankfurt am Main
+country :Germany
+stb :[MAG250]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:26:6C:E1
+expire :February 16, 2022, 4:05 pm
+city :Skara
+country :Sweden
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:26:6D:8C
+expire :February 7, 2022, 11:29 pm
+city :Vinninga
+country :Sweden
+stb :[MAG254]
+adult :[0000]
+EMEGE SAYGI LÜTFEN
+════════════════Se7en════════════════
+
+════════════════Nightly════════════════
+mac  :00:1A:79:3A:D9:7B
+expire :May 24, 2022, 8:17 am
+city :Hamburg
+country :Germany
