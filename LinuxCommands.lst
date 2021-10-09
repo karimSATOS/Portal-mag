@@ -1,3 +1,13 @@
+################################################
+#############     world of enigma2  ############
+#############        karim abu rida ############
+################################################
+          @@ AJPanel COMMANDS @@
+
+
+
+
+
 @@ RestartEnigma @@
 systemctl restart enigma2     # DreamOS
 killall -9 enigma2            # Opensource
