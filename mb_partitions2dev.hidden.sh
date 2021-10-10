@@ -26,7 +26,7 @@ USERDATA_FS=ext4
 USERDATA_MOUNTPOINT=/media/hdd
 
 ## the following variable is to limit how many Extra Multiboot Slots you want to create.
-EXTRA_MB_SLOTSLIMIT=10
+EXTRA_MB_SLOTSLIMIT=20
 
 #########################################################
 ### From here on there is nothing to change for users ###
