@@ -1,16 +1,15 @@
-################################################
-#############    world of enigma2  ############
-#############    karim abu rida    ############
-################################################
-          @@ AJPanel COMMANDS @@
-
-
+             @@@@@@@@@@@@@@@@linuxCommands.list@@@@@@@@@@@@@@@
+             @@@@@@@@@@@@@@@   KARIM ABU RIDA  @@@@@@@@@@@@@@@
+             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 
 @@ RestartEnigma @@
 systemctl restart enigma2     # DreamOS
 killall -9 enigma2            # Opensource
+
+@@ re enter image @@
+rm -R /etc/enigma2 && killall -9 enigma2
 
 @@ LogEnigma2 @@
 init 5; enigma2.sh >/tmp/enigma2_logfile.log 2>&1
@@ -20,6 +19,10 @@ journalctl -f -u enigma2>/usr/enigma_log
 
 @@ DebugEnigma @@
 init 4; sleep 5; enigma2 >/tmp/enigma2_logfile.log 2>&1
+
+@@ Remove Log @@
+rm -rf $HOME/Enigma2_crash*           # Openpli
+rm -rf $HOME/root/logs/Enigma2_crash*
 
 @@ Init Codes @@
 init 0          # Deep Standby 
@@ -35,8 +38,8 @@ pwd                  # Current Dir
 cd                   # Home
 cd ..                # Up
 cd /                 # Root
-cd /home             # Home
-cd /home/root        # User Dir
+cd $HOME             # Home
+cd $HOME/root        # User Dir
 cd /tmp              # /tmp
 
 @@ File List @@
@@ -56,13 +59,16 @@ grep PATTERN FILES
 grab -d -p /tmp/filename.png
 
 @@ System @@
+which FILE_NAME
 echo root:XXXX | chpasswd  # Change Password
 date
+top
 hostname
 hostname -i
 uname -a
 uptime
 whoami
+dmesg | more
 shutdown -r now    # Full reboot.
 shutdown -h now    # Full shutdown.
 cat /proc/meminfo  # memory info
@@ -75,7 +81,10 @@ who
 @@ Network @@
 ifconfig
 netstat
+head -n 1 /etc/hostname  # Show Hostname
 ping google.com -c 3        # 3 seconds
+ip route get 1.2.3.4 | awk '{print $7}'  # Show IP addresses
+hostname -i | awk '{print $1}'  # Show locale host
 
 @@ Change MAC @@
 ifconfig eth0 down
@@ -96,8 +105,12 @@ df -a
 @@ Sound @@
 alsamixer
 
+@@ Delete Portals @@
+init 4 && sleep 5 && sed -e s/config.plugins.MultiStalker.portals.*//g -i /etc/enigma2/settings && init 3
+
 @@ Opensource @@
 opkg update
+opkg download FILE_NAME
 opkg update; opkg upgrade
 opkg install --force-overwrite /tmp/*.ipk
 opkg remove --force-depends FILE_NAME
@@ -120,6 +133,7 @@ opkg install wget
 opkg install curl
 opkg install astra-sm
 opkg install ffmpeg
+opkg install ntfs-3g
 cd /tmp && rm -f ffinstall.py && wget http://zadmario.gitlab.io/ffinstall.py && python ffinstall.py
 cd /tmp && rm -f ffinstall.py && wget http://e2iplayer.pkteam.pl/ffinstall.py && python ffinstall.py
 opkg install gstplayer
@@ -143,6 +157,14 @@ opkg install gstplayer ffmpeg libgstplayer-1.0-0
 opkg install enigma2-plugin-systemplugins-softcamstartup                  # TeamBlue
 opkg install enigma2-plugin-skins-metrix-atv-fhd-icons                    # Openatv
 
+@@ Skins @@
+
+opkg install enigma2-plugin-skins-madmax-impossible
+opkg install enigma2-plugin-skins-pdreamy-fhd
+
+@@ Skins myflow @@
+wget https://raw.githubusercontent.com/ostende/dreamos-skins/main/myflow/myflow-installer_dreamos.sh -O - | /bin/sh  # DreamOS
+
 @@ SoftCam secret feed @@
 wget http://updates.mynonpublic.com/oea/feed -qO - | /bin/sh
 
@@ -160,10 +182,21 @@ opkg install enigma2-plugin-drivers-network-usb-mt7601u
 opkg remove --force-depends enigma2-plugin-drivers-network-usb-mt7601u
 
 @@@@--- Plugins ---@@@@
+@@ Multiboot FlashOnline @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/FlashOnline/installer.py -qO - | python
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FlashOnline
+
+@@ XcPlugin Forever @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/XC-Code/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/XCplugin
+
+@@ YouTube @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/YouTube/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/YouTube
 
 @@ SubsSupport @@
 wget https://raw.githubusercontent.com/biko-73/SubsSupport/main/installer.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/SubsSupport/
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/SubsSupport
 
 @@ IPtoSAT @@
 wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/IPtoSAT/installer.sh -qO - | /bin/sh
@@ -183,7 +216,7 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/MultiStalker
 
 @@ AJPanel @@
 wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AJPan/
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AJPan
 
 @@ DreamSatPanel @@
 wget http://ipkinstall.ath.cx/ipk-install/DreamSatPanel/installer.sh  -qO - | /bin/sh
@@ -247,6 +280,16 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/NeoBoot
 wget http://tunisia-dreambox.info/TSplugins/torrentPlayer/installer.sh -qO - | /bin/sh
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer
 
+@@ BackupFlash @@
+wget http://tunisia-dreambox.info/TSplugins/backupflash/installer.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/backupflashe2
+
+@@ SpeedTest @@
+wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py -qO - | python
+
+@@ Channel @@
+wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Channel/installer.sh -qO - | /bin/sh
+
 @@ Softcam @@
 wget -qO /etc/tuxbox/config/SoftCam.Key "https://raw.githubusercontent.com/MOHAMED19OS/SoftCam_Emu/main/Enigma2/SoftCam.Key"
 rm -rf /etc/tuxbox/config/SoftCam.Key
@@ -260,158 +303,3 @@ wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Oscam_Ncam/inst
 
 @@ just watch @@
 wget http://justwatch.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh    # DreamOS
-
-@@ BackupFlash @@
-wget http://tunisia-dreambox.info/TSplugins/backupflash/installer.sh -qO - | /bin/sh    # DreamOS
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/backupflashe2
-
-@@ openpli IP Audio @@
-opkg install gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-bad-meta  gstreamer1.0-plugins-ugly libgstplayer-1.0-0
-opkg install --force-depends gstreamer1.0-plugins-bad-meta  
-
-@@ SoftCam secret feed @@
-wget http://updates.mynonpublic.com/oea/feed -qO - | /bin/sh 
- 
-@@ OpenATV SoftCam Feed @@ 
-wget -O - -q http://updates.mynonpublic.com/oea/feed | bash   
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OpenAtv/OpenATV_softcam_feed_v8.0.ipk  
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OpenAtv/softcam-feed-universal_4.5-r0_all.ipk  
-
-@@ Opendriod SoftCam Feed @@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OPD/softcam-feed-opd_7.0_all.ipk 
-  
-@@ OpenEight SoftCam Feed octagon images  @@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/OpenEight/enigma2-plugin-softcam.feed-openeight_6.6_all.ipk
- 
-@@ TeamBlue SoftCam Feed @@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/Feeds/TeamBlue/cam4-teamblue_1_all.ipk  
-
-@@ Driver Wifi Novaler @@
-opkg list | grep mt76
-opkg install enigma2-plugin-drivers-network-usb-mt7601u
-opkg remove --force-depends enigma2-plugin-drivers-network-usb-mt7601u
-
-@@@@--- Plugins  ---@@@@
- 
-@@ AJPanel @@
-wget https://raw.githubusercontent.com/biko-73/AjPanel/main/installer.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AJPan/
-
-@@ DreamSatPanel @@
-wget http://ipkinstall.ath.cx/ipk-install/DreamSatPanel/installer.sh  -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/DreamSat
-  
-@@cfg_Zoom @@
-opkg install --force-overwrite  https://drive.google.com/uc?id=1hCv5jDcm08E0OHdtZ8PrjDfxLnIk_6UC&export=download 
-
-@@ XcPlugin Forever @@ 
-wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/XC-Code/installer.sh -qO - | /bin/sh 
-
-@@@@   multiboot   @@@@
- 
-@@ Multiboot-FlashOnline  للأجهزة التي لديها ريكفري مثل الاجهزة Sf8008-Gbtri4k  @@
-wget https://raw.githubusercontent.com/m4dhouse/Multiboot-FlashOnline/main/mbflashonline.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/FlashOnline 
-
- 
-@@ OpenMultiboot vuplus @@
-wget https://raw.githubusercontent.com/biko-73/openmultiboot/main/installer.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/OpenMultiboot
-
-@@ NEOBOOT vuplus @@
-wget https://raw.githubusercontent.com/gutosie/neoboot/master/iNB.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/NeoBoot
-
-@@ neoboot @@  
-opkg update
-opkg install curl
-curl -kLs https://raw.githubusercontent.com/gutosie/neoboot/master/iNB.sh|sh  
-
-@@ Remove & Erase file - delete crashs  @@ 
-rm -rf /media/hdd/logs/Enigma2_crash* /media/usb/logs/Enigma2_crash* /home/root/logs/Enigma2_crash*
-rm -rf /media/hdd/logs/Enigma2_debug* /media/usb/logs/Enigma2_debug* /home/root/logs/Enigma2_debug*
-rm -r /usr/lib/enigma2/python/Plugins/Extensions/xxx      
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/IPTVPlayer/  
- 
- 
-@@ MgCamds/1.46  @@  
-opkg remove enigma2-softcams-mgcamd-all-images 
-opkg install --force-overwrite http://178.63.156.75/paneladdons/MgCamds/1.46/enigma2-plugin-softcams-mgcamd.1.46_1.0-r3_all.ipk  
-
-@@ CCcam Softcam   @@
-opkg remove enigma2-softcams-cccam-all-images
-opkg install --force-overwrite http://178.63.156.75/paneladdons/CCcamEmu/2.3.9/enigma2-softcams-cccam-all-images_2.3.9-r2-RAED_OE2.0_all.ipk  
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/CCcamEmu/2.3.9/enigma2-softcams-cccam-all-images_239-r4-RAED_OE2.0_all.ipk
- 
- 
-@@   skins @@  
-
-@@dreamos-skins-myflow سكين بالبوستر للنواه2.5للاستاذ راضوان @@
-wget https://raw.githubusercontent.com/ostende/dreamos-skins/main/myflow/myflow-installer_dreamos.sh -O - | /bin/sh 
- 
-  
-@@ skin-metrix-reloaded@@  
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skin-metrix-reloaded-ael_1.0.3_all.ipk
-  
-@@ skin pdreamy-fhd @@  
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-pdreamy-fhd_1.0-r8_all.ipk 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-pdreamy-fhd_1.1-r7_all.ipk 
-
-@@ fullhdline @@
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-fullhdline_v1.8_modPY2_3-fhdl_hdd-tmp_9events-posters_July09_2021_all.ipk
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-fullhdline_v1.8_modPY2_3-fhdl_hdd-tmp_1event-posters_July09_2021_all.ipk
-  
-@@ skin madmax-impossible @@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-madmax-impossible_1.6_all_oea.ipk
-   
-@@ metrixfhd-neo @@
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-metrixfhd-neo_V11_all.ipk 
-  
-@@ tuxbox-neutrin @@
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-tuxbox-neutrino-fhd_v.0.9-rc7-open-beta_all.ipk
- 
-@@ skin nacht_2.0 @@
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-nacht_2.0_all.ipk
- 
-@@ skin skins-ozeta @@
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-ozeta_1.5.1_all.ipk 
- 
-@@ nitro-fhd @@
-  
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-nitro-fhd-all_1.1_all.ipk 
- 
-@@ madmax @@
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/OpenATV/enigma2-plugin-skins-madmax-impossible_2.4_all.ipk
- 
-@@fullhdglass17@@  
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/Other/enigma2-skin-fullhdglass17_7.02_all.ipk 
- 
-@@/VTi-skin-cerxfhd@@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/VTi/enigma2-plugin-skin-cerxfhd_20210904_all.ipk 
- 
-@@/VTi-skin-metrix-reloaded-ael @@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/VTi/enigma2-plugin-skin-metrix-reloaded-ael_1.0.8_all.ipk   
-
-@@/VTi-skin-cyanmulticolor-fhd @@ 
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/VTi/enigma2-plugin-skin-cyanmulticolor-fhd_4.0_all.ipk  
-
-@@/VTi-skin-full-hd_9.7 @@
-
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/skins/VTi/enigma2-plugin-skin-full-hd_9.7_all.ipk  
- 
-
-@@ panels @@ 
-
-@@ tvaddon_2.0.1@@ 
-
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/panels/enigma2-plugin-extensions-tvaddon_2.0.1_all.ipk 
-
-@@ levi45-addonsmanager @@ 
-
-opkg install --force-overwrite  http://178.63.156.75/paneladdons/panels/enigma2-plugin-extensions-levi45-addonsmanager_3.4_all.ipk 
-     
-@@ restart enigma2 @@  
-killall -9 enigma2 
-
-
-
