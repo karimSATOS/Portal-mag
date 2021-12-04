@@ -18,19 +18,16 @@ init 5; enigma2.sh >/tmp/enigma2_logfile.log 2>&1
 journalctl -f -u enigma2>/usr/enigma_log
 
 @@ DebugEnigma @@
-init 4; sleep 5; enigma2 >/tmp/enigma2_logfile.log 2>&1
+init 4; sleep 5; enigma2 >/tmp/enigma2_debug.log 2>&1
 
 @@ Remove Log @@
-rm -rf $HOME/Enigma2_crash*           # Openpli
-rm -rf $HOME/root/logs/Enigma2_crash*
+find $HOME -name '*.log' -exec rm {} \;
 
 @@ Init Codes @@
 init 0          # Deep Standby 
 init 1          # Stops Enigma2 and network
-init 2          # Stops Enigma2
 init 3          # Starts Enigma2 normally
 init 4          # Stops Enigma2
-init 5          # Stops Enigma2
 init 6          # Reboots the box
 
 @@ Directory @@
@@ -39,7 +36,6 @@ cd                   # Home
 cd ..                # Up
 cd /                 # Root
 cd $HOME             # Home
-cd $HOME/root        # User Dir
 cd /tmp              # /tmp
 
 @@ File List @@
@@ -112,6 +108,8 @@ init 4 && sleep 5 && sed -e s/config.plugins.MultiStalker.portals.*//g -i /etc/e
 opkg update
 opkg download FILE_NAME
 opkg update; opkg upgrade
+opkg flag hold FILE_NAME  # Stop Plug-in auto updating
+opkg flag user FILE_NAME  # Star Plug-in auto updating
 opkg install --force-overwrite /tmp/*.ipk
 opkg remove --force-depends FILE_NAME
 opkg remove --force-depends enigma2-plugin-softcams-ncam
@@ -126,19 +124,31 @@ apt-get purge --auto-remove FILE_NAME
 apt-get purge --auto-remove enigma2-plugin-softcams-ncam
 apt-get purge --auto-remove enigma2-plugin-softcams-oscam*
 
-@@@@--- Command ---@@@@
+@@ Python 2 @@
 opkg install python-requests
 opkg install python-sqlite3
+opkg install python-beautifulsoup4
+opkg install python-pycrypto
+opkg install python-urllib3
+
+@@ Python 3 @@
+opkg install python3-requests
+opkg install python3-sqlite3
+opkg install python3-beautifulsoup4
+opkg install python3-pycrypto
+opkg install python3-urllib3
+
+@@@@--- Command ---@@@@
 opkg install wget
 opkg install curl
 opkg install astra-sm
 opkg install ffmpeg
-opkg install ntfs-3g
+opkg install enigma2-plugin-drivers-ntfs-3g
+opkg install enigma2-plugin-drivers-exfat
 cd /tmp && rm -f ffinstall.py && wget http://zadmario.gitlab.io/ffinstall.py && python ffinstall.py
 cd /tmp && rm -f ffinstall.py && wget http://e2iplayer.pkteam.pl/ffinstall.py && python ffinstall.py
-opkg install gstplayer
+opkg install gstplayer libgstplayer-1.0-0
 opkg install exteplayer3
-opkg install python-pycrypto
 opkg install livestreamer
 opkg install livestreamersrv
 opkg install libusb-1.0-0
@@ -153,7 +163,6 @@ opkg install gstreamer1.0-plugins-base
 opkg install gstreamer1.0-plugins-bad
 opkg install gstreamer1.0-plugins-ugly
 opkg install gstreamer1.0-plugins-bad-meta
-opkg install gstplayer ffmpeg libgstplayer-1.0-0
 opkg install enigma2-plugin-systemplugins-softcamstartup                  # TeamBlue
 opkg install enigma2-plugin-skins-metrix-atv-fhd-icons                    # Openatv
 
@@ -171,10 +180,6 @@ wget http://updates.mynonpublic.com/oea/feed -qO - | /bin/sh
 @@ Kodi : Opensource @@
 opkg install enigma2-plugin-extensions-kodi kodi-addon-pvr-vuplus
 opkg remove --force-depends kodi kodi-addon-pvr-vuplus
-
-@@ Kodi : DreamOS @@
-apt-get install enigma2-plugin-extensions-kodi kodi-addon-pvr-vuplus 
-apt-get purge --auto-remove  kodi kodi-addon-pvr-vuplus
 
 @@ Driver Wifi Novaler @@
 opkg list-installed | grep mt7601u
@@ -222,9 +227,16 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/AJPan
 wget http://ipkinstall.ath.cx/ipk-install/DreamSatPanel/installer.sh  -qO - | /bin/sh
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/DreamSat
 
+@@ XtraEvante @@
+wget https://github.com/digiteng/xtra/raw/main/xtraEvent.sh -qO - | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/xtraEvent
+rm -rf /usr/lib/enigma2/python/Components/Converter/xtra*
+rm -rf /usr/lib/enigma2/python/Components/Renderer/xtra*
+rm -rf /usr/share/enigma2/xtra
+
 @@ TSmedia home TV @@
 wget http://tunisia-dreambox.info/TSmedia/software_official/installer.sh -qO - | /bin/sh
-rm -rf /usr/lib/enigma2/python/Plugins/Extensions/TSmedia
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/XtraEvante
 
 @@ FootOnsat @@
 wget https://raw.githubusercontent.com/ziko-ZR1/FootOnsat/main/Download/install.sh -qO - | /bin/sh
@@ -284,6 +296,10 @@ rm -rf /usr/lib/enigma2/python/Plugins/Extensions/torrentPlayer
 wget http://tunisia-dreambox.info/TSplugins/backupflash/installer.sh -qO - | /bin/sh
 rm -rf /usr/lib/enigma2/python/Plugins/Extensions/backupflashe2
 
+@@ LiveFootBall @@
+wget -qO - http://tunisia-dreambox.info/TSplugins/LiveFootBall/installer.sh | /bin/sh
+rm -rf /usr/lib/enigma2/python/Plugins/Extensions/LiveFootBall
+
 @@ SpeedTest @@
 wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py -qO - | python
 
@@ -299,7 +315,32 @@ wget -qO /etc/tuxbox/satellites.xml https://raw.githubusercontent.com/OpenPLi/tu
 rm -rf /etc/tuxbox/satellites.xml
 
 @@ Oscam & Ncam @@
-wget https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Oscam_Ncam/installer.sh -q; sh installer.sh
+wget -q https://raw.githubusercontent.com/MOHAMED19OS/Download/main/Oscam_Ncam/installer.sh; sh installer.sh
+
+@@ OpenWebif @@
+wget http://tunisia-dreambox.info/TSplugins/openWebif/installer.sh -qO - | /bin/sh
 
 @@ just watch @@
-wget http://justwatch.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh    # DreamOS
+wget http://justwatch.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh
+
+@@ PlexDream @@
+wget http://plugins.boxpirates.dynvpn.de/plexdream-dreamos-installer.sh -qO - | /bin/sh
+
+@@ Disney+ @@
+wget http://disneydream.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh
+
+@@ Amazon Prime @@
+wget http://amazonprimedream.bpdl2.mine.nu/dreamos-installer.sh -qO - | /bin/sh
+
+@@ BoxPirates @@
+wget http://boxpiratespanel.boxpirates.dynvpn.de/ipk-installer.sh -qO - | /bin/sh
+
+@@ DAZN Dream @@
+wget http://dazndream.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh
+
+@@ Netflix Dream @@
+wget http://netflixdream.boxpirates.dynvpn.de/dreamos-installer.sh -qO - | /bin/sh
+
+@@ MediaPortal OE2.5 @@
+wget http://feed.newnigma2.to/mpgz/mpgz-full-installer_dreamos_oe25.sh -qO - | /bin/sh
+
